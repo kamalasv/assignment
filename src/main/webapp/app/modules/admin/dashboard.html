@@ -1,0 +1,27 @@
+
+<div class="container">
+	<center>
+		<h2>View All Orders detail</h2>
+	</center>
+	<br>
+
+	<table class="table">
+		<thead class="thead-inverse">
+			
+			<th>Customer Id</th>
+			<th>Order Id</th>
+			<th>Order Item</th>
+			<th>Order Item Desc</th>
+			<th>Order Date</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="order in vm.orders track by $index">
+				<td>{{order.customerId}}</td>
+				<th scope="row">{{order.orderItemId}}</th>
+				<td>{{order.orderItem}}</td>
+				<td>{{order.itemDesc}}</td>
+				<td>{{order.orderDate | date : "yyyy-MM-dd"}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

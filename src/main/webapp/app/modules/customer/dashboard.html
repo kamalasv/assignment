@@ -1,0 +1,65 @@
+<div class="container">
+	<form>
+		<center>
+			<h2>Add Product</h2>
+		</center>
+		<br>
+		<div class="row">
+			<div class="col-sm-2 col-md-2">
+				<label>Customer ID:</label>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<input type="text" class="form-control" ng-disabled="true"
+					ng-model="vm.custId">
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-sm-2 col-md-2">
+				<label>Order Item:</label>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<input type="text" class="form-control" placeholder="Item Name"
+					ng-model="vm.orderItem">
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-sm-2 col-md-2">
+				<label>Item Description:</label>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<input type="text" class="form-control"
+					placeholder="Item Description" ng-model="vm.itemDesc">
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-sm-2 col-md-2">
+				<label>Order Date:</label>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<input type="date" class="form-control"
+					placeholder="Item Description" ng-model="vm.orderDate">
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-sm-2 col-md-2"></div>
+			<div class="col-sm-4 col-md-4">
+				<button class="btn btn-lg btn-primary btn-block" type="submit"
+					ng-click="vm.saveItem()">Save</button>
+			</div>
+		</div>
+		
+		<br>
+		<div class="row" ng-show="vm.message != null">
+			<div class="col-sm-12 col-md-12 alert alert-success">{{vm.message}}</div>
+		</div>
+
+	</form>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="customer">
+<head>
+<meta charset="utf-8">
+<title>Customer Application</title>
+
+<link href="assets/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+<link href="app/css/login.css" rel="stylesheet" />
+
+</head>
+<body ng-controller="AppCntrl">
+
+<div ui-view></div>
+
+
+	<script type="text/javascript" src="assets/angular-1.5.9/angular.min.js"></script>
+	<script type="text/javascript" src="assets/angular-ui-router/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="assets/angular-1.5.9/angular-resource.min.js"></script>
+
+  	<script type="text/javascript" src="app/app.js"></script>
+  	<script type="text/javascript" src="app/config.js"></script>
+  	<script type="text/javascript" src="app/http-call-utils.js"></script>
+  	<script type="text/javascript" src="app/app-cntrl.js"></script>
+  	<script type="text/javascript" src="app/modules/login/login-cntrl.js"></script>
+  	<script type="text/javascript" src="app/modules/admin/admin-cntrl.js"></script>
+  	<script type="text/javascript" src="app/modules/customer/customer-cntrl.js"></script>
+  	<script type="text/javascript" src="app/modules/customer/customer-dataservice.js"></script>
+  	
+</body>
+</html>
